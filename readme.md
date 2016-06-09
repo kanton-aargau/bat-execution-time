@@ -10,13 +10,13 @@
 
 ## Installation
 
-```bash
+```
 $ npm install -g bat-execution-time
 ```
 
 ## Usage
 
-```bash
+```
 bat-execution-time [batfile] [args]
 
 Options:
@@ -25,12 +25,35 @@ Options:
   -h, --help    Show help                                              [boolean]
 ```
 
-### Example
+### Examples
+
+Write directly to `stdout`:
+
+```
+$ bat-execution-time .\test\fixtures\test.bat -t 5
+```
 
 ![example](./docs/example.png)
 
-```bash
-$ bat-execution-time .\test\fixtures\test.bat -t 5
+Or write the output to a file:
+
+```
+$ bat-execution-time .\test\fixtures\test.bat -o results.json -t 2
+```
+
+```json
+{
+  "data": [
+    {
+      "processTime": 3.217272558,
+      "timeOfDay": "16:55:23"
+    },
+    {
+      "processTime": 3.208636087,
+      "timeOfDay": "16:55:26"
+    }
+  ]
+}
 ```
 
 ## License
