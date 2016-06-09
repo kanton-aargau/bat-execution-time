@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 
 const { join, isAbsolute } = require('path')
 const createUi = require('cliui')

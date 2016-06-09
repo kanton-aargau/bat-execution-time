@@ -3,8 +3,9 @@
   "version": "0.0.2",
   "description": "CLI to measure the execution time for a bat file over a period of time",
   "main": "src/index.js",
+  "preferGlobal": "true",
   "bin": {
-    "bat-execution-time": "bin/index.js"
+    "bat-execution-time": "./bin/index.js"
   },
   "engines": {
     "node": "6.x"
