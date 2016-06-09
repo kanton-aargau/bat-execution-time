@@ -1,6 +1,6 @@
 {
   "name": "bat-execution-time",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "CLI to measure the execution time for a bat file over a period of time",
   "main": "src/index.js",
   "bin": {
